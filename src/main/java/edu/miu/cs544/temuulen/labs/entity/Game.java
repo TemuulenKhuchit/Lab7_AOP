@@ -13,7 +13,16 @@ public class Game {
     }
 
     public void play() {
+        // We try to move both for demonstration, but the aspect will control if allowed.
         car.move();
         bike.move();
+    }
+
+    public Bike getBike() {
+        return bike;
+    }
+
+    public Car getCar() {
+        return car;
     }
 }

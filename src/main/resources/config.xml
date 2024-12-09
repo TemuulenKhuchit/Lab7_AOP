@@ -9,8 +9,8 @@
     <bean id="car" class="edu.miu.cs544.temuulen.labs.entity.Car"/>
     <bean id="game" class="edu.miu.cs544.temuulen.labs.entity.Game"/>
 
-    <bean id="logAspect" class="edu.miu.cs544.temuulen.labs.BeanCounterPostProcessor"/>
     <bean id="vehicleAspect" class="edu.miu.cs544.temuulen.labs.aspects.VehicleAspect"/>
+    <bean id="logAspect" class="edu.miu.cs544.temuulen.labs.aspects.Logger"/>
     <bean id="beanCounterPostProcessor" class="edu.miu.cs544.temuulen.labs.BeanCounterPostProcessor"/>
 
     <context:annotation-config/>

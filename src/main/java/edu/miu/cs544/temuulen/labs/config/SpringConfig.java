@@ -15,10 +15,9 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy
 public class SpringConfig {
 
-    // By default, we have both Car and Bike as in the original code
     @Bean(name = "bike")
     public Vehicle bike() {
-        return new Bike(); // prototype behavior can be shown if needed
+        return new Bike();
     }
 
     @Bean(name = "car")
@@ -42,7 +41,7 @@ public class SpringConfig {
     }
 
     @Bean
-    public BeanCounterPostProcessor beanCounterPostProcessor() {
+    public static BeanCounterPostProcessor beanCounterPostProcessor() {
         return new BeanCounterPostProcessor();
     }
 }

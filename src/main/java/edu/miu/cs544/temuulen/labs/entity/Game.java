@@ -4,25 +4,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Game {
     @Autowired
-    private Bike bike;
+    private Vehicle bike;
 
     @Autowired
-    private Car car;
+    private Vehicle car;
 
     public Game() {
     }
 
     public void play() {
-        // We try to move both for demonstration, but the aspect will control if allowed.
         car.move();
         bike.move();
     }
 
-    public Bike getBike() {
+    public Vehicle getBike() {
         return bike;
     }
 
-    public Car getCar() {
+    public Vehicle getCar() {
         return car;
     }
 }

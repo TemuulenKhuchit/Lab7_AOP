@@ -5,8 +5,6 @@ import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 
-// This logger just logs before and after Game methods for demonstration.
-// Additional functionality will be in VehicleAspect.
 @Aspect
 public class Logger {
     @Before("execution(* edu.miu.cs544.temuulen.labs.entity.Game.*())")
